@@ -1,0 +1,14 @@
+# Dependencies for the ONLINE dashboard (Streamlit Community Cloud).
+# Lighter than the root requirements.txt: no PyTorch / notebook tools.
+# scikit-learn, xgboost and shap are pinned to the versions the saved models were trained with.
+streamlit==1.65.0
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.53.0
+imbalanced-learn>=0.14
+pandas>=3.0
+numpy>=2.5
+scipy>=1.15
+pyarrow>=20
+altair>=5.0
+joblib>=1.4
