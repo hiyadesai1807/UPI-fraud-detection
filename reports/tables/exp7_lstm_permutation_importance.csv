@@ -1,0 +1,13 @@
+feature,pr_auc_drop
+request_amount_roundness,0.25671
+amount,0.25503
+transaction_time_of_day,0.00721
+input_timing_consistency,0.00642
+input_pause_patterns,0.0034
+transaction_amount_vs_sender_history,0.00301
+keyboard_input_speed,0.00169
+session_duration,0.00075
+pin_entry_speed,0.00052
+background_data_usage,0.00047
+screen_active_time,0.00036
+app_switching_frequency,0.00019

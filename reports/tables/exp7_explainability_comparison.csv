@@ -1,0 +1,13 @@
+feature,shap_xgboost,ig_mlp,shap_rank,ig_rank
+request_amount_roundness,1.3482,2.00634,1,1
+amount,1.11666,1.01179,2,2
+transaction_time_of_day,0.59515,0.65952,3,3
+input_timing_consistency,0.41446,0.25128,4,5
+transaction_amount_vs_sender_history,0.3994,0.3025,5,4
+keyboard_input_speed,0.27603,0.14025,6,9
+input_pause_patterns,0.09554,0.17527,7,8
+background_data_usage,0.07174,0.22283,8,6
+screen_active_time,0.06168,0.09523,9,11
+session_duration,0.05725,0.21251,10,7
+pin_entry_speed,0.04732,0.11794,11,10
+app_switching_frequency,0.02653,0.09122,12,12

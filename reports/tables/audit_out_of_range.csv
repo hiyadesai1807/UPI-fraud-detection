@@ -1,0 +1,13 @@
+feature,legit_min,legit_max,fraud_outside_pct
+request_amount_roundness,0.997965511,1.002551301,63.94
+input_timing_consistency,0.800013614,0.999997881,39.93
+keyboard_input_speed,0.500052426,1.499989714,39.38
+input_pause_patterns,2.38e-06,0.199999391,31.88
+background_data_usage,2.6e-06,0.499994923,31.88
+pin_entry_speed,0.500063274,1.999997576,31.35
+amount,139.2676643,10523.9102,27.68
+session_duration,30.0,300.0,26.2
+app_switching_frequency,0.0,2.0,19.45
+screen_active_time,120.0,600.0,16.26
+transaction_amount_vs_sender_history,0.222799075,55.09971369,1.54
+transaction_time_of_day,0.0,23.0,0.0

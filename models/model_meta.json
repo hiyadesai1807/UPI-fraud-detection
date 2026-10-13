@@ -1,0 +1,51 @@
+{
+  "thresholds": {
+    "Logistic Regression": 0.6621648348288902,
+    "Random Forest": 0.5800937401785664,
+    "XGBoost": 0.45673516392707825,
+    "MLP": 0.19057101011276245,
+    "LSTM": 0.5074675679206848
+  },
+  "champion": "XGBoost",
+  "best_params": {
+    "Logistic Regression": {
+      "strategy": "class_weight",
+      "cv_pr_auc": 0.8669,
+      "model__C": 100.0
+    },
+    "Random Forest": {
+      "strategy": "class_weight",
+      "cv_pr_auc": 0.948,
+      "model__n_estimators": 400,
+      "model__min_samples_leaf": 1,
+      "model__max_features": 0.5,
+      "model__max_depth": 8
+    },
+    "XGBoost": {
+      "strategy": "none",
+      "cv_pr_auc": 0.9491,
+      "model__subsample": 1.0,
+      "model__n_estimators": 400,
+      "model__min_child_weight": 5,
+      "model__max_depth": 4,
+      "model__learning_rate": 0.03,
+      "model__colsample_bytree": 1.0
+    }
+  },
+  "feature_set": "T2_behavioural",
+  "feature_columns": [
+    "amount",
+    "session_duration",
+    "transaction_amount_vs_sender_history",
+    "transaction_time_of_day",
+    "input_timing_consistency",
+    "app_switching_frequency",
+    "keyboard_input_speed",
+    "input_pause_patterns",
+    "screen_active_time",
+    "background_data_usage",
+    "pin_entry_speed",
+    "request_amount_roundness"
+  ],
+  "cost_optimal_threshold_champion": 0.14
+}

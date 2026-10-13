@@ -1,0 +1,4 @@
+partition,rows,users,fraud_rows,fraud_rate_pct
+train,15712,2890,2691,17.13
+val,5307,964,895,16.86
+test,5374,964,959,17.85

@@ -1,0 +1,2 @@
+feature_a,feature_b,equal_in_legit_pct,equal_in_fraud_pct,auc_of_abs_difference
+geographic_disparity,geographic_location_vs_ip,100.0,35.89,0.8206

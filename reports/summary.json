@@ -1,0 +1,106 @@
+{
+  "dataset": {
+    "rows": 26393,
+    "users": 4818,
+    "fraud_rate": 0.1722,
+    "columns_raw": 65
+  },
+  "split": [
+    {
+      "partition": "train",
+      "rows": 15712,
+      "users": 2890,
+      "fraud_rows": 2691,
+      "fraud_rate_pct": 17.13
+    },
+    {
+      "partition": "val",
+      "rows": 5307,
+      "users": 964,
+      "fraud_rows": 895,
+      "fraud_rate_pct": 16.86
+    },
+    {
+      "partition": "test",
+      "rows": 5374,
+      "users": 964,
+      "fraud_rows": 959,
+      "fraud_rate_pct": 17.85
+    }
+  ],
+  "feature_set_sizes": {
+    "T0_all_features": 49,
+    "T1_proxies_removed": 46,
+    "T2a_behavioural_with_geo_pair": 14,
+    "T2_behavioural": 12,
+    "T2H_behavioural_history": 20
+  },
+  "n_legit_constant_columns": 39,
+  "imbalance_strategy_selected": {
+    "Logistic Regression": "class_weight",
+    "MLP": "none",
+    "Random Forest": "class_weight",
+    "XGBoost": "none"
+  },
+  "random_split_test_rows_with_seen_user": 0.959,
+  "main_feature_set": "T2_behavioural",
+  "champion": "XGBoost",
+  "hard_subset_test": {
+    "rows": 4567,
+    "fraud_rows": 162
+  },
+  "explainability": {
+    "spearman_shap_vs_ig": 0.895,
+    "top5_shap": [
+      "request_amount_roundness",
+      "amount",
+      "transaction_time_of_day",
+      "input_timing_consistency",
+      "transaction_amount_vs_sender_history"
+    ],
+    "top5_ig": [
+      "request_amount_roundness",
+      "amount",
+      "transaction_time_of_day",
+      "transaction_amount_vs_sender_history",
+      "input_timing_consistency"
+    ],
+    "top5_lstm": [
+      "request_amount_roundness",
+      "amount",
+      "transaction_time_of_day",
+      "input_timing_consistency",
+      "input_pause_patterns"
+    ],
+    "agreement_vs_leakage": {
+      "T2a_behavioural_with_geo_pair": {
+        "spearman": 0.424,
+        "top3_shap": [
+          "amount",
+          "request_amount_roundness",
+          "transaction_time_of_day"
+        ],
+        "top3_ig": [
+          "request_amount_roundness",
+          "amount",
+          "geographic_disparity"
+        ]
+      },
+      "T2_behavioural": {
+        "spearman": 0.86,
+        "top3_shap": [
+          "amount",
+          "request_amount_roundness",
+          "transaction_time_of_day"
+        ],
+        "top3_ig": [
+          "request_amount_roundness",
+          "amount",
+          "transaction_time_of_day"
+        ]
+      }
+    }
+  },
+  "runtime_minutes": 41.6,
+  "fast_mode": false
+}
